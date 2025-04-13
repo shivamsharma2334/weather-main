@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather-App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>weather app</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
+    <section>
+        <h1>Weather app project (dummy)</h1>
+    </section>
     
-    <div class="body-element">
     <main>
-        <form>
-            <input type="text" id="name" autocomplete="off">
-            <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-        <section class="result">
+        <section class="box-size">
+            <div class="box-data">
+                <form class="search-item">
+                    <input id="city" type="text" autocomplete="off" placeholder="Enter the city/state">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <figure class="text-img">
+                    <figcaption>
+                        <h1>Jharkhand</h1>
+                    </figcaption>
+                    <img src="https://www.worldometers.info/img/flags/in-flag.gif" alt="image of country flag">
+                </figure>
+                <figure class="cloud-img">
+                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="Image of cloud " srcset="">
+                    <figcaption>
+                        <span>31</span>
+                        <sup>o</sup>
+                    </figcaption>
+                    <p class="description">overcast clouds</p>
+                </figure>
+                <div class="other-data">
+                    <ul>
+                        <li>
+                            <span>clouds</span>
+                            <i class="fa-solid fa-cloud"></i>
+                            <span id="clouds">98</span>%
+                        </li>
+                        <li>
+                            <span>humidity</span>
+                            <i class="fa-solid fa-droplet"></i>
+                            <span id="humidity">98</span>%
+                        </li>
+                        <li>
+                            <span>pressure</span>
+                            <i class="fa-solid fa-gauge"></i>
+                            <span id="pressure">1011</span>hPa
+                        </li>
+                        <li>
+                            <span>wind speed</span>
+                            <i class="fa-solid fa-wind"></i>
+                            <span id="wind-speed">3.8</span>m/s WNM
+                        </li>
+                        <li>
+                            <span>visibility</span>
+                            <i class="fa-solid fa-eye"></i>
+                            <span id="visibility">10.0</span>Km
+                        </li>
+                        <li>
+                            <span>dew point</span>
+                            <i class="fa-solid fa-droplet"></i>
+                            <span id="dew-point">-5</span>
+                        </li>
+                    </ul>
 
-            <figure class="name">
-                <figcaption>Jharkhand</figcaption> 
-                <img src="https://flagsapi.com/IN/shiny/32.png">
-            </figure>
 
-            <figure class="temperature">
-                <img src="https://openweathermap.org/img/wn/10d@4x.png">
-                <figcaption>
-                   <h3><span>31</span>
-                    <sup>o</sup></h3> 
-                </figcaption> 
-            </figure>
-            <p class="description">overcast clouds</p>
-            <ul>
-                <li>
-                    <span>clouds</span>
-                    <i class="fa-solid fa-cloud"></i>
-                    <span id="clouds">98</span>%
-                </li>
-                <li>
-                    <span>humidity</span>
-                    <i class="fa-solid fa-droplet"></i>
-                    <span id="humidity">98</span>%
-                </li>
-                <li>
-                    <span>pressure</span>
-                    <i class="fa-solid fa-gauge"></i>
-                    <span id="pressure">1011</span>hPa
-                </li>
-            </ul>
+                </div>
+
         </section>
     </main>
-</div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
